@@ -2,7 +2,7 @@ import React from 'react'
 import squad from '../../assets/images/squad.png'
 import red from '../../assets/images/red.png'
 import Button from '../../shared/Button'
-import Team from '../../assets/images/team.png'
+import team from '../../assets/images/team.png'
 import advisors from '../../assets/images/advisors.png'
 import teamline from '../../assets/images/teamline.png'
 import SquadCard from './squadCard'
@@ -65,7 +65,7 @@ function Squad() {
         />
       </div>
       <div className="absolute w-full flex justify-center items-center gap-20 z-10 top-55">
-        <img src={Team} alt="Team" className="" />
+        <img src={team} alt="Team" className="" />
         <img src={advisors} alt="Advisors" className="" />
       </div>
       <div className="absolute w-full flex justify-center items-center z-10 bottom-10">
