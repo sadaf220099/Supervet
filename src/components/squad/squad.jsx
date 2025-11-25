@@ -12,7 +12,6 @@ import redline from '../../assets/images/redline.png'
 
 
 function Squad() {
-  // Squad members data for mapping cards
   const squadMembers = [
     {
       id: 1,
