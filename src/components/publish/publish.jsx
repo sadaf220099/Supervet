@@ -6,12 +6,12 @@ import publish from '../../assets/icons/publish.svg'
 import pub1 from '../../assets/images/pub1.png'
 import pub2 from '../../assets/images/pub2.png'
 import pub3 from '../../assets/images/pub3.png'
-import tech1 from '../../assets/images/TECH1.png'
-import tech2 from '../../assets/images/TECH2.png'
-import tech3 from '../../assets/images/TECH3.png'
-import tech4 from '../../assets/images/TECH4.png'
-import tech5 from '../../assets/images/TECH5.png'
-import tech6 from '../../assets/images/TECH6.png'
+import tech1 from '../../assets/images/tech1.png'
+import tech2 from '../../assets/images/tech2.png'
+import tech3 from '../../assets/images/tech3.png'
+import tech4 from '../../assets/images/tech4.png'
+import tech5 from '../../assets/images/tech5.png'
+import tech6 from '../../assets/images/tech6.png'
 function Publish() {
     return (
         <section className="w-screen h-screen bg-black flex items-center justify-center relative">
