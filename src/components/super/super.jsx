@@ -24,12 +24,9 @@ function Super() {
           <div className="absolute top-0 left-3 z-20">
             <img src={vet} alt="Vet" className="w-[392px] h-auto block" />
           </div>
-
-         
           <div className="absolute top-0 w-full z-5 flex justify-center">
             <img src={redline} alt="Redline" className="w-auto h-auto max-w-full" />
           </div>
-
           <div className="absolute inset-0 z-0">
             <img
               src={super1}

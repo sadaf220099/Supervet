@@ -4,101 +4,105 @@ import logo from '../assets/images/logo.png'
 
 function Footer() {
     return (
-        <footer className="text-black py-12 px-8" >
+        <footer className="text-black py-8 px-8">
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
                 
-                    <div className="lg:col-span-1 flex justify-center lg:justify-start">
+                    {/* Logo Section */}
+                    <div className="lg:col-span-1 flex justify-center">
                         <div className="flex flex-col items-center">
                             <img
                                 src={logo}
                                 alt="Logo"
-                                className="w-20 h-20 object-contain"
+                                className="w-60 h-60 object-contain"
                             />
                         </div>
                     </div>
 
+                    {/* Links Section */}
                     <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
                         
-                        <div>
-                            <h3 className="text-lg font-semibold mb-4" style={{ fontFamily: 'Rajdhani' }}>
+                        {/* Learn More */}
+                        <div className="text-center md:text-left">
+                            <h3 className="text-[22px] font-semibold mb-2" style={{ fontFamily: 'Rajdhani' }}>
                                 LEARN MORE
                             </h3>
-                            <ul className="space-y-2">
+                            <ul className="space-y-1">
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Gameplay
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Roadmap
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Superverse
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                       
-                        <div>
-                            <h3 className="text-lg font-semibold mb-4" style={{ fontFamily: 'Rajdhani' }}>
+                        {/* Marketplace */}
+                        <div className="text-center md:text-left">
+                            <h3 className="text-[22px] font-semibold mb-2" style={{ fontFamily: 'Rajdhani' }}>
                                 Marketplace
                             </h3>
-                            <ul className="space-y-2">
+                            <ul className="space-y-1">
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Character
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
-                                            In-Game Assets
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                        In-Game Assets
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Buy/Sell
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         NFT Staking
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div>
-                            <h3 className="text-lg font-semibold mb-4" style={{ fontFamily: 'Rajdhani' }}>
+                        {/* Quick Links */}
+                        <div className="text-center md:text-left">
+                            <h3 className="text-[22px] font-semibold mb-2" style={{ fontFamily: 'Rajdhani' }}>
                                 QUICK LINKS
                             </h3>
-                            <ul className="space-y-2">
+                            <ul className="space-y-1">
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Whitepepper
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Pitch Deck
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Marketplace
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-black hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
+                                    <a href="#" className="text-black text-xl font-normal hover:text-white transition-colors" style={{ fontFamily: 'Rajdhani' }}>
                                         Smart comtract
                                     </a>
                                 </li>
@@ -106,13 +110,14 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className="lg:col-span-1">
-                        <div className="text-center lg:text-left">
+                    {/* Subscribe Section */}
+                    <div className="lg:col-span-1 flex justify-center">
+                        <div className="text-center">
                             <h3 className="text-lg font-semibold mb-4" style={{ fontFamily: 'Rajdhani' }}>
                                 SUBSCRIBE US
                             </h3>
 
-                            <div className="mb-4">
+                            <div className="max-w-sm">
                                 <div className="relative">
                                     <input
                                         type="email"
@@ -133,8 +138,6 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </footer>
     )

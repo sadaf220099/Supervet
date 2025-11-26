@@ -1,8 +1,9 @@
 import React from 'react'
 import ai from '../../assets/images/ai.png'
-import horse from '../../assets/images/horse.png'
 import glaiveFont from '../../assets/fonts/Glaive Regular.woff'
 import redline from '../../assets/images/redline.png'
+import horseVideo from '../../assets/vedios/horse.mp4'
+
 function Ai() {
    
     React.useEffect(() => {
@@ -47,7 +48,14 @@ function Ai() {
 
                  
                     <div className="flex justify-center lg:justify-end">
-                        <img src={horse} alt="AI Future Plan Illustration" className="w-full max-w-md h-auto object-contain" />
+                        <video 
+                            src={horseVideo}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full max-w-md h-auto object-contain"
+                        />
                     </div>
                 </div>
             </div>

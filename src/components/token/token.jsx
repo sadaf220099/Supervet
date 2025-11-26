@@ -1,11 +1,11 @@
 import React from 'react'
-import token from '../../assets/images/token.png'
 import redline from '../../assets/images/redline.png'
 import coins from '../../assets/images/coins.png'
 import coin1 from '../../assets/images/coin1.png'
 import tokenCenter from '../../assets/images/tokens.png'
 import token1 from '../../assets/images/token1.png'
-import Tokencard from './tokencard' // Import your Tokencard component
+import Tokencard from './tokencard' 
+import tokenVideo from '../../assets/vedios/token.mp4'
 
 function Token() {
   // Token data for cards
@@ -35,9 +35,12 @@ function Token() {
           </div>
           
           <div className="absolute inset-0 z-0">
-            <img
-              src={token}
-              alt="Background"
+            <video
+              src={tokenVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full h-full object-cover"
             />
           </div>
@@ -46,8 +49,8 @@ function Token() {
             TOKENOMICS
           </h1>
 
-          {/* Cards Container */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 grid grid-cols-3 gap-6 md:gap-8">
+          
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 grid grid-cols-3 gap-6 md:gap-8 animate-zoom-in">
             {tokenData.map((item) => (
               <Tokencard 
                 key={item.id}

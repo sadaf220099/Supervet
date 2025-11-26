@@ -10,9 +10,10 @@ import icon4 from "../../assets/icons/icon4.svg";
 import icon5 from "../../assets/icons/icon5.svg";
 import storybg from '../../assets/images/storybg.png'
 import Story from "../story/story";
+import hero from '../../assets/vedios/hero.mp4'
 
 import glaiveFont from "../../assets/fonts/Glaive Regular.woff";
-import glaiveOrnaments from "../../assets/fonts/Glaive Ornaments.woff";
+
 function Home() {
 
     React.useEffect(() => {
@@ -33,9 +34,12 @@ function Home() {
         <section
             className="w-screen min-h-screen relative">
             <div className="absolute inset-0 z-0">
-                <img
-                    src={background}
-                    alt="Background"
+                <video
+                    src={hero}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-full object-cover"
                 />
             </div>

@@ -42,12 +42,12 @@ function Partners() {
                     className="w-full h-full object-cover"
                 />
             </div>
-            <div className='absolute w-full flex flex-col items-center z-10 pb-8'>
+            <div className='absolute w-full flex flex-col items-center z-10 pb-8 zoom-in'>
                 <div className="mt-20 text-center ">
                     <h2 className="text-5xl font-normal text-white mb-4" style={{ fontFamily: 'GlaiveLocal' }}>Partners</h2>
                     <img src={line} alt="" aria-hidden="true" className="mx-auto" />
                 </div>
-                <div className='flex gap-23'>
+                <div className='flex gap-23 '>
                     <img src={part1} alt="" className='w-[195px] h-[195px] ' />
                     <img src={part2} alt="" className='w-[195px] h-[195px]' />
                     <img src={part3} alt="" className='w-[195px] h-[195px]' />
@@ -55,7 +55,7 @@ function Partners() {
                     <img src={part5} alt="" className='w-[195px] h-[195px]' />
 
                 </div>
-                <div className='flex gap-23'>
+                <div className='flex gap-23 '>
                     <img src={part6} alt="" className='w-[195px] h-[195px] ' />
                     <img src={part7} alt="" className='w-[195px] h-[195px]' />
                     <img src={part8} alt="" className='w-[195px] h-[195px]' />

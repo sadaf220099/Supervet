@@ -9,7 +9,6 @@ import Story from './components/story/story'
 
 const router = createBrowserRouter([
   {
-
     path: "/",
     element: <DashboardOutlet />,
     children: [
@@ -21,7 +20,6 @@ const router = createBrowserRouter([
         path: "story",
         element: <Story />
       }
-
     ]
   }
 ]);

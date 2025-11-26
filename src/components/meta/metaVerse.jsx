@@ -24,11 +24,11 @@ function MetaVerse() {
                     <span className="text-[#FFC810]">OCULUS</span>
                 </p>
 
-                <img src={ow} alt="" className="mt-4" />
+                <img src={ow} alt="" className="mt-4 animate-bounce "  />
 
                 <Button
-                    text="VR TEASER"
-                    className="bg-[#FFC810] text-black text-[28px] font-bold px-6 py-3 mt-6 hover:scale-105 transition-transform duration-300 ease-in-out"
+                    text="VR TEASER "
+                    className="bg-[#FFC810] text-black text-[28px] font-bold px-6 py-3 mt-6 hover:scale-105 transition-transform duration-300 ease-in-out zoom-in"
                     style={{ fontFamily: 'Rajdhani' }}
                 />
             </div>

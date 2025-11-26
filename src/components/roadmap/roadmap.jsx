@@ -1,10 +1,10 @@
 import React from 'react'
-import roadmap from '../../assets/images/roadmap.png'
 import redline from '../../assets/images/redline.png'
 import map from '../../assets/images/map.png'
 import nina from '../../assets/images/nina.png'
 import redlines from '../../assets/images/redlines.png'
 import mdot from '../../assets/images/mdot.png'
+import roadmapVideo from '../../assets/vedios/roadmap.mp4'
 
 
 function Roadmap() {
@@ -75,9 +75,12 @@ function Roadmap() {
              </div>
              
              <div className="absolute inset-0 z-0">
-               <img
-                 src={roadmap}
-                 alt="Background"
+               <video
+                 src={roadmapVideo}
+                 autoPlay
+                 loop
+                 muted
+                 playsInline
                  className="w-full h-full object-cover"
                />
              </div>
