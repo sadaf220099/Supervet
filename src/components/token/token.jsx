@@ -6,9 +6,7 @@ import tokenCenter from '../../assets/images/tokens.png'
 import token1 from '../../assets/images/token1.png'
 import Tokencard from './tokencard' 
 import tokenVideo from '../../assets/vedios/token.mp4'
-
 function Token() {
-  // Token data for cards
   const tokenData = [
     {
     id: 1,
@@ -26,14 +24,11 @@ function Token() {
     description: "SUPPLY"
   }
   ]
-
   return (
      <section className="w-screen h-screen relative">
-         
           <div className="absolute top-0 w-full z-5 flex justify-center">
             <img src={redline} alt="Redline" className="w-auto h-auto max-w-full" />
           </div>
-          
           <div className="absolute inset-0 z-0">
             <video
               src={tokenVideo}
@@ -44,13 +39,10 @@ function Token() {
               className="w-full h-full object-cover"
             />
           </div>
-          
           <h1 className='absolute mt-32 left-1/2 -translate-x-1/2 z-20 text-[#FFC810] text-4xl md:text-6xl font-bold rajdhani-font'>
             TOKENOMICS
-          </h1>
-
-          
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 grid grid-cols-3 gap-6 md:gap-8 animate-zoom-in">
+          </h1> 
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 grid grid-cols-3 gap-6 md:gap-8 aos-animate ">
             {tokenData.map((item) => (
               <Tokencard 
                 key={item.id}
@@ -59,24 +51,19 @@ function Token() {
               />
             ))}
           </div>
-
           <div className="absolute top-20 left-1/2 -translate-x-1/2 z-10">
             <img src={tokenCenter} alt="Token Center" className="w-auto h-auto" />
           </div>
-
           <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10">
             <img src={coins} alt="Coins Left" className="w-auto h-auto block" />
           </div>
-
           <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10">
             <img src={coin1} alt="Coin Right" className="w-auto h-auto block" />
           </div>
-          
           <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10">
             <img src={token1} alt="Token Bottom" className="w-auto h-auto block" />
           </div>
     </section>
   )
 }
-
 export default Token

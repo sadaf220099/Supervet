@@ -30,7 +30,7 @@ function Ai() {
                 />
             </div>
             <div className='absolute inset-0 z-10 flex justify-center items-center px-8 md:px-16 lg:px-24'>
-                <div className='w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
+                <div className='w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center slide-right'>
                    
                     <div className='space-y-6'>
                         <p className="text-[84px] md:text-4xl lg:text-5xl font-bold" style={{ fontFamily: 'Rajdhani' }}>

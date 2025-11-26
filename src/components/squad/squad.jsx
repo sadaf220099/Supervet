@@ -66,7 +66,6 @@ function Squad() {
     }
   ];
 
-  // Group members into slides of 4
   const groupedMembers = [];
   for (let i = 0; i < squadMembers.length; i += 4) {
     groupedMembers.push(squadMembers.slice(i, i + 4));
