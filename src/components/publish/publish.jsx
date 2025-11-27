@@ -6,12 +6,12 @@ import publish from '../../assets/icons/publish.svg'
 import pub1 from '../../assets/images/pub1.png'
 import pub2 from '../../assets/images/pub2.png'
 import pub3 from '../../assets/images/pub3.png'
-import tech1 from '../../assets/images/tech1.png'
 import tech2 from '../../assets/images/tech2.png'
 import tech3 from '../../assets/images/tech3.png'
 import tech4 from '../../assets/images/tech4.png'
 import tech5 from '../../assets/images/tech5.png'
 import tech6 from '../../assets/images/tech6.png'
+import solidity from '../../assets/images/solidity1.png'
 
 function Publish() {
     return (
@@ -81,7 +81,7 @@ function Publish() {
                             style={{ borderColor: '#FFC810' }}
                         >
                             <div className="grid grid-cols-2 gap-2 sm:gap-4  lg:gap-4 items-center justify-center">
-                                <img src={tech1} alt="" className="w-14 h-16 sm:w-8 lg:w-16" />
+                                <img src={solidity} alt="" className="w-14 h-16 sm:w-8 lg:w-16" />
                                 <img src={tech2} alt="" className="w-14 h-16 sm:w-8 lg:w-16" />
                                 <img src={tech3} alt="" className="w-14 h-16 sm:w-8 lg:w-16" />
                                 <img src={tech4} alt="" className="w-14 h-16 sm:w-8 lg:w-16" />
