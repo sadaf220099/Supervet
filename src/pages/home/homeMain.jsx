@@ -6,12 +6,13 @@ import MetaVerse from '../../components/meta/metaVerse'
 import Partners from '../../components/partners/partners'
 import Ai from '../../components/ai/ai'
 import News from '../../components/news/news'
-import Publish from '../../components/publish/publish'
+// import Publish from '../../components/publish/publish'
 import Squad from '../../components/squad/squad'
 import Faq from '../../components/faq/faq'
 import Super from '../../components/super/super'
 import Token from '../../components/token/token'
 import Roadmap from '../../components/roadmap/roadmap'
+import PublishV2 from '../../components/publish/publishV2'
 
 
 function homeMain() {
@@ -30,13 +31,13 @@ function homeMain() {
         <MetaVerse />
       </div>
       <div className="w-full">
-       <Roadmap />
+        <Roadmap />
       </div>
       <div className="w-full">
-        <Super/>
+        <Super />
       </div>
       <div className="w-full">
-        <Token/>
+        <Token />
       </div>
       <div className="w-full">
         <Partners />
@@ -48,7 +49,7 @@ function homeMain() {
         <News />
       </div>
       <div className="w-full">
-        <Publish />
+        <PublishV2 />
       </div>
       <div className="w-full">
         <Squad />
