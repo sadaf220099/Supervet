@@ -18,9 +18,7 @@ function Publish() {
         <section className="w-screen min-h-screen bg-black flex items-center justify-center relative px-4 py-10">
             <div className="top-0 w-full absolute">
                 <img src={redline} alt="" className="w-full" />
-            </div>
-
-           
+            </div>           
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10">
 
                 <div className="mb-0 flex flex-col items-center">
@@ -44,7 +42,6 @@ function Publish() {
                         </div>
                     </div>
                 </div>
-
                 <div className="mb-10 flex flex-col items-center">
                     <div className="relative w-48 h-24 sm:w-56 sm:h-28 lg:w-64 lg:h-32">
                         <img src={publish} className="w-full h-full object-contain" />
@@ -94,7 +91,6 @@ function Publish() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     )
