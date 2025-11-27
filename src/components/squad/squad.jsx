@@ -1,17 +1,13 @@
 import React, { useRef } from 'react'
 import { Carousel } from 'antd'
-
 import Button from '../../shared/Button'
 import advisors from '../../assets/images/advisors.png'
-
 import SquadCard from './squadCard'
 import msa from '../../assets/images/msa.png'
 import msa1 from '../../assets/images/msa1.png'
 import redline from '../../assets/images/redline.png'
 import squadVideo from '../../assets/vedios/squad.mp4'
 import team1 from '../../assets/images/team1.png'
-
-
 function Squad() {
   const carouselRef = useRef(null);
 
@@ -108,8 +104,8 @@ function Squad() {
         />
       </div>
       <div className="absolute w-full flex justify-center items-center gap-20 z-10 top-55">
-        <img src={team1} alt="Team" className="" />
-        <img src={advisors} alt="Advisors" className="" />
+        <img src={team1} />
+        <img src={advisors}  />
       </div>
       <div className="absolute w-full flex justify-center items-center z-10 bottom-10">
 
