@@ -11,12 +11,11 @@ function Faq() {
         <div className="w-screen h-screen">
             <section className="w-screen h-screen relative" style={{ background: '#FFC810' }}>
 
-                {/* Top Red Line */}
+                
                 <div className="absolute top-0 w-full z-10 flex justify-center">
                     <img src={redline} alt="Redline" className="w-auto h-auto max-w-full" />
                 </div>
 
-                {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
                         src={faq}
@@ -24,10 +23,9 @@ function Faq() {
                     />
                 </div>
 
-                {/* FAQ Section */}
                 <div className="absolute w-full flex flex-col items-center z-10 px-2">
 
-                    {/* Heading */}
+                   
                     <div className="text-center">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-black pt-10"
                             style={{ fontFamily: 'GlaiveLocal' }}>
@@ -36,7 +34,6 @@ function Faq() {
                         <img src={line} alt="" aria-hidden="true" className="mx-auto w-28 sm:w-32 md:w-auto" />
                     </div>
 
-                    {/* FAQ Items */}
                     <div className="mt-10 px-2 max-w-4xl mx-auto space-y-4">
 
                         {[
@@ -61,11 +58,11 @@ function Faq() {
 
                     </div>
 
-                    {/* Bottom Decoration */}
+                   
                     <img src={reds} alt="" className="mt-6 w-32 sm:w-40 md:w-auto hidden sm:block" />
                 </div>
 
-                {/* Footer */}
+             
                 <div className="absolute w-full bottom-0">
                     <Footer />
                 </div>

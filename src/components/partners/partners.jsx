@@ -43,7 +43,6 @@ function Partners() {
     return (
         <section className="w-screen min-h-screen relative">
 
-            {/* Background */}
             <div className="absolute inset-0 z-0">
                 <img
                     src={partners}

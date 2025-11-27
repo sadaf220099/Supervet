@@ -42,7 +42,6 @@ function Game() {
                 <img src={redline} alt="" className="w-full" />
             </div>
 
-            {/* GAME TITLE */}
             <div className="relative z-10 flex justify-center items-center ">
                 <img src={gamebg} alt="Example" className="w-48 sm:w-64 lg:w-auto" />
                 <p
@@ -54,13 +53,13 @@ function Game() {
                 </p>
             </div>
 
-            {/* MAIN CONTENT */}
+           
             <div className="absolute inset-0 flex flex-col lg:flex-row 
                             items-center justify-center 
                             px-4 sm:px-6 lg:px-10 
                             z-10 mt-16 gap-6">
 
-                {/* PLAY IMAGE */}
+                
                 <div className="z-20">
                     <img
                         src={play}
@@ -71,7 +70,7 @@ function Game() {
                     />
                 </div>
 
-                {/* TEXT CONTENT */}
+                
                 <div className="w-full max-w-xl lg:w-[700px] flex flex-col gap-2 text-center lg:text-left">
                     <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#E2E2E2]">
                         Play Super Vet & Earn Exciting Rewards

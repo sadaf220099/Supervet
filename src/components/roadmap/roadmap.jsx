@@ -88,7 +88,6 @@ function Roadmap() {
         <img src={map} alt="Roadmap Sign" className="w-28 sm:w-40 md:w-60 h-auto" />
       </div>
 
-      {/* ✅ ONLY CHANGE: hidden on small screens */}
       <div className="absolute bottom-0 left-1 sm:left-2 md:left-15 z-10 hidden sm:block">
         <img
           src={nina}

@@ -20,10 +20,9 @@ function Publish() {
                 <img src={redline} alt="" className="w-full" />
             </div>
 
-            {/* Main responsive wrapper */}
+           
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10">
 
-                {/* LEFT SECTION */}
                 <div className="mb-0 flex flex-col items-center">
                     <div className="relative w-48 h-24 sm:w-56 sm:h-28 lg:w-64 lg:h-32">
                         <img src={publish} className="w-full h-full object-contain" />
@@ -46,7 +45,6 @@ function Publish() {
                     </div>
                 </div>
 
-                {/* CENTER SECTION */}
                 <div className="mb-10 flex flex-col items-center">
                     <div className="relative w-48 h-24 sm:w-56 sm:h-28 lg:w-64 lg:h-32">
                         <img src={publish} className="w-full h-full object-contain" />
