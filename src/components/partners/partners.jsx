@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import partners from '../../assets/images/partners.png'
 import line from '../../assets/icons/line.svg'
 import part1 from '../../assets/images/part1.png'
@@ -17,8 +17,15 @@ import part13 from '../../assets/images/part13.png'
 import part14 from '../../assets/images/part14.png'
 import glaiveFont from '../../assets/fonts/Glaive Regular.woff'
 import redline from '../../assets/images/redline.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Partners() {
+    useEffect(() => {
+  {
+            AOS.init();
+        }
+    }, []);
     React.useEffect(() => {
         const style = document.createElement('style');
         style.textContent = `
@@ -34,7 +41,9 @@ function Partners() {
     }, []);
 
     return (
-        <section className="w-screen h-[100vh] relative">
+        <section className="w-screen min-h-screen relative">
+
+            {/* Background */}
             <div className="absolute inset-0 z-0">
                 <img
                     src={partners}
@@ -42,38 +51,50 @@ function Partners() {
                     className="w-full h-full object-cover"
                 />
             </div>
-            <div className='absolute w-full flex flex-col items-center z-10 pb-8 aos-animate'>
-                <div className="mt-20 text-center ">
-                    <h2 className="text-5xl font-normal text-white mb-4" style={{ fontFamily: 'GlaiveLocal' }}>Partners</h2>
-                    <img src={line} alt="" aria-hidden="true" className="mx-auto" />
-                </div>
-                <div className='flex gap-23 '>
-                    <img src={part1} alt="" className='w-[195px] h-[195px] ' />
-                    <img src={part2} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part3} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part4} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part5} alt="" className='w-[195px] h-[195px]' />
 
-                </div>
-                <div className='flex gap-23 '>
-                    <img src={part6} alt="" className='w-[195px] h-[195px] ' />
-                    <img src={part7} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part8} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part9} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part10} alt="" className='w-[195px] h-[195px]' />
+        
+            <div className="absolute w-full flex flex-col items-center z-10 pb-8 px-4" data-aos="zoom-in-up" data-aos-duration="2000">
 
+                <div className="mt-12 md:mt-16 text-center">
+                    <h2
+                        className="text-3xl sm:text-4xl md:text-5xl font-normal text-white mb-1"
+                        style={{ fontFamily: 'GlaiveLocal' }}
+                    >
+                        Partners
+                    </h2>
+                    <img src={line} alt="" aria-hidden="true" className="mx-auto w-32 sm:w-auto" />
                 </div>
-                <div className='flex gap-23 mr-[285px]'>
-                    <img src={part11} alt="" className='w-[195px] h-[140px] ' />
-                    <img src={part12} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part13} alt="" className='w-[195px] h-[195px]' />
-                    <img src={part14} alt="" className='w-[195px] h-[195px]' />
+
+                
+                <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-23 mt-1">
+                    <img src={part1} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part2} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part3} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part4} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part5} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                </div>
 
 
+                <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-23 mt-1">
+                    <img src={part6} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part7} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part8} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part9} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part10} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
                 </div>
+
+                <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-23 mt-1 md:mr-[285px]">
+                    <img src={part11} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part12} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part13} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                    <img src={part14} alt="" className="w-24 sm:w-24 md:w-[195px] h-auto" />
+                </div>
+
             </div>
-            <div className="absolute top-0 w-full">
-                <img src={redline} alt="" />
+
+           
+            <div className="absolute top-0 w-full z-20">
+                <img src={redline} alt="" className="w-full" />
             </div>
 
         </section>

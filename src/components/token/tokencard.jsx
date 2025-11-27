@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import vector1 from '../../assets/images/vector1.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Tokencard({ title, description }) {
+  useEffect(() => {
+      AOS.init();
+  }, 
+  []);
   return (
-    <div className="relative w-54 h-28">
+    <div className="relative w-54 h-28" data-aos="zoom-out-down" data-aos-duration="2000">
      
       <div
         className="absolute -top-1 -left-1 -bottom-1 -right-1 z-0"

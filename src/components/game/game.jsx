@@ -10,7 +10,7 @@ import gameVideo from '../../assets/vedios/game.mp4'
 import play from '../../assets/images/play.png'
 
 function Game() {
-   
+
     React.useEffect(() => {
         const style = document.createElement('style');
         style.textContent = `
@@ -26,7 +26,7 @@ function Game() {
     }, []);
 
     return (
-        <section className="w-screen h-screen relative overflow-hidden">
+        <section className="w-screen min-h-screen relative overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <video
                     src={gameVideo}
@@ -39,37 +39,56 @@ function Game() {
             </div>
 
             <div className="absolute top-0 w-full z-30">
-                <img src={redline} alt="" />
+                <img src={redline} alt="" className="w-full" />
             </div>
 
-            <div className="relative z-10 flex justify-center items-center">
-                <img src={gamebg} alt="Example" className="" />
-                <p className="absolute inset-0 flex items-center justify-center text-black text-[50px] font-normal" style={{ fontFamily: 'GlaiveLocal' }}>
+            {/* GAME TITLE */}
+            <div className="relative z-10 flex justify-center items-center ">
+                <img src={gamebg} alt="Example" className="w-48 sm:w-64 lg:w-auto" />
+                <p
+                    className="absolute inset-0 flex items-center justify-center
+                               text-black text-2xl sm:text-4xl lg:text-[50px] font-normal"
+                    style={{ fontFamily: 'GlaiveLocal' }}
+                >
                     GAME PLAY
                 </p>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center px-10 z-10 mt-20">
-               
+
+            {/* MAIN CONTENT */}
+            <div className="absolute inset-0 flex flex-col lg:flex-row 
+                            items-center justify-center 
+                            px-4 sm:px-6 lg:px-10 
+                            z-10 mt-16 gap-6">
+
+                {/* PLAY IMAGE */}
                 <div className="z-20">
-                    <img 
-                        src={play} 
-                        alt="Play" 
-                        className="w-[544px] h-[801px] object-contain"
+                    <img
+                        src={play}
+                        alt="Play"
+                        className="w-[260px] sm:w-[360px] lg:w-[544px]
+                                   h-auto object-contain"
                         onError={(e) => console.log('Play image failed to load:', e)}
                     />
                 </div>
-                <div className='w-[700px] flex flex-col gap-1'>
-                    <h3 className='text-xl font-semibold text-[#E2E2E2]'>Play Super Vet & Earn Exciting Rewards</h3>
-                    <p className='text-[#E2E2E2] font-normal text-sm mt-1.5'>
+
+                {/* TEXT CONTENT */}
+                <div className="w-full max-w-xl lg:w-[700px] flex flex-col gap-2 text-center lg:text-left">
+                    <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#E2E2E2]">
+                        Play Super Vet & Earn Exciting Rewards
+                    </h3>
+
+                    <p className="text-[#E2E2E2] font-normal text-xs sm:text-sm mt-1.5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus in dolor, pulvinar euismod et arcu sit odio. At sed vulputate
                         ornare maecenas sit. Malesuada vitae augue morbi eget donec. Erat a eget sed sollicitudin vitae ac at. Sagittis senectus hen
                         drerit accumsan tinciduntut aenean at in laoreet.
                     </p>
-                    <img src={trek} alt="" className='h-[300px]' />
-                    <div className='flex gap-1 pb-3'>
-                        <img src={trek1} alt="" />
-                        <img src={trek2} alt="" />
-                        <img src={trek3} alt="" />
+
+                    <img src={trek} alt="" className="h-40 sm:h-56 lg:h-[300px] mx-auto lg:mx-0" />
+
+                    <div className="flex gap-2 pb-3 justify-center lg:justify-start">
+                        <img src={trek1} alt="" className="w-8 sm:w-10 lg:w-auto" />
+                        <img src={trek2} alt="" className="w-8 sm:w-10 lg:w-auto" />
+                        <img src={trek3} alt="" className="w-8 sm:w-10 lg:w-auto" />
                     </div>
                 </div>
             </div>
