@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
 import { Carousel } from 'antd'
-import red from '../../assets/images/red.png'
+
 import Button from '../../shared/Button'
 import team from '../../assets/images/team.png'
 import advisors from '../../assets/images/advisors.png'
-import teamline from '../../assets/images/teamline.png'
+
 import SquadCard from './squadCard'
 import msa from '../../assets/images/msa.png'
 import msa1 from '../../assets/images/msa1.png'
